@@ -31,6 +31,16 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
+    # Code quality
+  gem 'rubocop', require: false
+  # Rubocop Rails extension
+  gem 'rubocop-rails', require: false
+  # Rubocop Rake extension
+  gem 'rubocop-rake', require: false
+  # Rubocop performance extension
+  gem 'rubocop-performance', require: false
+  # Rubocop RSpec extension
+  gem 'rubocop-rspec', require: false
 end
 
 group :development do
